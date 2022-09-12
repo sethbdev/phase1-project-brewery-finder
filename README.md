@@ -1,6 +1,6 @@
 # phase-1-project
 This project is made by Peter, Seth, and Gian!
-Brewery Browser/Brewhunter is a website made for finding Breweries in or near cities.
+Gehrig's Brewery Browser/Brewhunter is a website made for finding Breweries in or near cities.
 Users have the ability to type in a city they would like to find breweries in or near and then
 click on any Breweries that interest them to provide information on that brewery. The users
 are also able to add a like to any brewery that they wish.
