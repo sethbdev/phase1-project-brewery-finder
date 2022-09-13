@@ -42,7 +42,8 @@ body {
 }
 
 .slide_content {
-    margin: 0 40px
+    padding: 45px 20px; 
+    margin: 0 40px;
 }
 
 .card {
@@ -111,4 +112,13 @@ body {
     font-size: 18px;
     font-weight: 500;
     color: #342404;
+}
+
+.swiper_navBtn {
+    color: #E3C567;
+    transition: color 0.3s ease;
+}
+
+.swiper_navBtn:hov {
+    color: #C8963E
 }

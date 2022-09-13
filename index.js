@@ -28,13 +28,16 @@ function renderBreweries(breweries){
 
 const swiper = new Swiper(".slide_content", {
     slidesPerView: 3,
-    spaceBetween: 15,
-    slidesPerGroup: 3,
+    spaceBetween: 25,
     loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
     loopFillGroupWithBlank: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
