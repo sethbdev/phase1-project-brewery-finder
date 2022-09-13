@@ -6,39 +6,52 @@
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         
         <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
-
         <link rel="stylesheet" href="./style.css">
         
     </head>
 
     <body>
         <header>
-            <h2 class="main_header" id="header">Brewhunter</h2>
+            <div class="main_header">
+                <div class="container">
+                    <div class="primary-header-inner">
+                        <h2 class="main_header" id="header">Brewhunter</h2>
+                    </div>
+                </div>
+            </div>
         </header>
+         <!--Image with Bar Name-->
         <div class="page_title">
             <h2 id="page_name">Hunt For Your New Bar</h2>
             <p class="page_description">
                 <em>Places we recommended for you to try.</em>
             </p>
         </div>
-        <--Image with Bar Name-->
         <div id="bar_image">
             <img class="image" src="./pictures/bar 5.jpeg" alt="Bar Image"/> 
         </div>
         <!--Bar Information-->
         <div class="bar_description">
-            <h3 class="bar_name">Insert Bar Name</h3>
-            <span class="heart_button">Heart Button</span>
-            <h4 id="state_location">State</h4>
-            <h4 id="city_location">City</h4>
-            <p id="phone_number">Bar Number</p>
-            <p>
-                <a href="website" class="bar_link">
-                    Link
-                </a>
-            </p>
+            <div>
+                <div style="width: 100%;">
+                    <div style="width: 50%; height: 205px; float: left; background: green;"> 
+                        Left Div 
+                    </div>
+                    <div id="right_description" style="margin-left: 50%; height: 205px; background: blue;"> 
+                        <h3 class="bar_name">Insert Bar Name</h3>
+                        <span class="heart_button">Heart Button</span>
+                        <h4 id="state_location">State</h4>
+                        <h4 id="city_location">City</h4>
+                        <p id="phone_number">Bar Number</p>
+                        <p>
+                            <a href="website" class="bar_link">
+                                Link
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    
         <!--Bar Cards-->
 
         <section class="swiper_bar">
@@ -308,9 +321,6 @@
 
             </div>
          </section>
-
-    
-
     </body>
 
 <script defer src="./assets/swiper-bundle.min.js"></script>
