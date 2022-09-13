@@ -2,12 +2,12 @@
 //const FULL_HEART = '♥'
 
 
-function fetchRandom(){
+function fetchBreweries(){
 fetch ("https://api.openbrewerydb.org/breweries")
     .then(r => r.json())
     .then(data => renderBreweries(data))
 }
-fetchRandom();
+fetchBreweries();
 
 function renderBreweries(breweries){
     breweries.map(brewery => {
