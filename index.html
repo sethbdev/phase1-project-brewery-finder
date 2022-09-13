@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        
+        <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
+
         <link rel="stylesheet" href="./style.css">
-        <script defer src="./index.js"></script>
+        
     </head>
-<!-- Don't look at this code
-    <body>
-        <header>
-            <div class="main_header">
-                <h2>Brewhunter</h2>
-            </div>
-        </header>
-        <div class="search-bar">
-            <div class="home_title_section">
-                <h1 class="home_title">Hunt For Your New Bar</h1>
-            </div>
-            <form id="form">
-                <div id = "state-dropdown">
-                    <label name="search_state"></label>
-                    <input type="text" name="search_state" id="search_state" placeholder="Enter State" value>
-                    <button type="submit" name="update_state" class="update_state">Search</button>       
-                </div>
-                <div id = "city-dropdown">
-                    <label for="search_city"></label>
-                    <input type="text" name="search_city" id="search_city" placeholder="Enter City" value>
-                    <button type="submit" name="update_city" class="update_city">Search</button>  
-                </div>
-            </form>
-        </div>
-    </body> -->
+
     <body>
         <header>
             <h2 class="main_header" id="header">Brewhunter</h2>
@@ -39,9 +21,9 @@
                 <em>Places we recommended for you to try.</em>
             </p>
         </div>
-        <!--Image with Bar Name-->
+        <--Image with Bar Name-->
         <div id="bar_image">
-            <img class="image" src="./pictures/bar 5.jpeg" alt="Bar Image"/>
+            <img class="image" src="./pictures/bar 5.jpeg" alt="Bar Image"/> 
         </div>
         <!--Bar Information-->
         <div class="bar_description">
@@ -56,9 +38,40 @@
                 </a>
             </p>
         </div>
+    
         <!--Bar Cards-->
-        <div class="bar_cards">
-            <p class="bar_name">Insert Bar Name</p>
-        </div>
+
+        <section class="swiper_bar">
+            <div class="slide_container swiper">
+                <div class="slide_content">
+                    <div class="card_wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image_content">
+                                <span class="overlay"></span>
+
+                                <div class="card_image">
+                                    <img src="./pictures/bar 1.jpeg" alt="bar" class="card_image">
+                                </div>
+                            </div>
+
+                            <div class="card_content">
+                                <h2 class="name">NAME</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+         </section>
+
+    
+
     </body>
+
+<script defer src="./assets/swiper-bundle.min.js"></script>
+<script defer src="./index.js"></script>
 </html>
