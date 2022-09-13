@@ -32,7 +32,6 @@ body {
 }
 
 .card {
-    width: 320px;
     border-radius: 25px;
     background-color: #FFF;
 }
@@ -66,8 +65,8 @@ body {
     content: '';
     position: absolute;
     right: 0;
-    bottom: -40px;
-    height: 40px;
+    bottom: -41px;
+    height: 41px;
     width: 40px;
     background-color: #342404;
 }
