@@ -4,26 +4,61 @@
         <link rel="stylesheet" href="./style.css">
         <script defer src="./index.js"></script>
     </head>
+<!-- Don't look at this code
     <body>
-        <h3>Brewery Browser/Brewhunter</h3>
-        <h1 class="home_title">Hunt For Your New Home</h1>
+        <header>
+            <div class="main_header">
+                <h2>Brewhunter</h2>
+            </div>
+        </header>
         <div class="search-bar">
-            <div id = "state-dropdown">
-                <label for="search_state"></label>
-                <input type="text" name="search_state" id="search_state" placeholder="Enter State" value>
-                <ol type="A" id="state_list">
-                    
-                </ol>
+            <div class="home_title_section">
+                <h1 class="home_title">Hunt For Your New Bar</h1>
             </div>
-            <div id = "city-dropdown">
-                <label for="search_city"></label>
-                <input type="text" name="search_city" id="search_city" placeholder="Enter City" value>
-                <ol type="A" id="city_list"></ol>
-                
-            </div>
-        <div class="brewery_bar">
-
+            <form id="form">
+                <div id = "state-dropdown">
+                    <label name="search_state"></label>
+                    <input type="text" name="search_state" id="search_state" placeholder="Enter State" value>
+                    <button type="submit" name="update_state" class="update_state">Search</button>       
+                </div>
+                <div id = "city-dropdown">
+                    <label for="search_city"></label>
+                    <input type="text" name="search_city" id="search_city" placeholder="Enter City" value>
+                    <button type="submit" name="update_city" class="update_city">Search</button>  
+                </div>
+            </form>
         </div>
+    </body> -->
+    <body>
+        <header>
+            <h2 class="main_header" id="header">Brewhunter</h2>
+        </header>
+        <div class="page_title">
+            <h2 id="page_name">Hunt For Your New Bar</h2>
+            <p class="page_description">
+                <em>Places we recommended for you to try.</em>
+            </p>
+        </div>
+        <!--Image with Bar Name-->
+        <div id="bar_image">
+            <img class="image" src="./pictures/bar 5.jpeg" alt="Bar Image"/>
+        </div>
+        <!--Bar Information-->
+        <div class="bar_description">
+            <h3 class="bar_name">Insert Bar Name</h3>
+            <span class="heart_button">Heart Button</span>
+            <h4 id="state_location">State</h4>
+            <h4 id="city_location">City</h4>
+            <p id="phone_number">Bar Number</p>
+            <p>
+                <a href="website" class="bar_link">
+                    Link
+                </a>
+            </p>
+        </div>
+        <!--Bar Cards-->
+        <div class="bar_cards">
+            <p class="bar_name">Insert Bar Name</p>
         </div>
     </body>
 </html>
