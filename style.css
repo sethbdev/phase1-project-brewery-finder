@@ -157,7 +157,7 @@ body {
 
 .swiper_navBtn::before,
 .swiper_navBtn::after {
-   font-size 40px; 
+   font-size: 40px; 
 }
 
 .swiper-button-next {
