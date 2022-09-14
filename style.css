@@ -1,6 +1,45 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+#header {
+    padding: 15px 0px 15px 15px;
+    text-align: left;
+    background:#100d06;
+    color: orange;
+    font-size: 60px;
+    font-family: Impact, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    /* background-image: ; */
+}
+
+.page_title{
+    padding:15px 0px 15px 15px;
+    color:orange;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#right_description {
+    text-align: center;
+    padding: 50px 40px ;
+    width: 400px;
+    color: orange;
+
+}
+
+#left_description {
+    text-align: center;
+    width: 400px;
+}
+
+#bar_id {
+    background-color: #dad6ce;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,24 +49,22 @@
 
 body {
     min-height: 100vh;
-    
     align-items: center;
     justify-content: center;
-    background-color: #EFEFEF;
+    background-color: #1a1919;
 }
 
-.swiper_bar {
-
-}
 
 .slide_container {
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
+    max-width: 1000px;
+    max-height: 100%;
+    background-color: #1a1919;
+    border-radius: 25px;
+    border: 8px solid #342404b1
 }
 
 .slide_content {
-    padding: 45px 20px; 
+    padding: 25px 20px; 
     margin: 0 40px;
 }
 
@@ -58,7 +95,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: #342404;
-    border-radius: 25px 25px 0 25px;
+    border-radius: 20px 20px 0 25px;
 }
 
 .overlay::before,
@@ -66,8 +103,8 @@ body {
     content: '';
     position: absolute;
     right: 0;
-    bottom: -41px;
-    height: 41px;
+    bottom: -42px;
+    height: 42px;
     width: 40px;
     background-color: #342404;
 }
@@ -129,3 +166,4 @@ body {
 .swiper-pagination-bullet-active {
     background-color: #C8963E;
 }
+
