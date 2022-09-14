@@ -89,3 +89,27 @@ const swiper = new Swiper(".slide_content", {
     })
 }
 */
+
+function renderBreweryNames(breweries){
+    breweries.map(brewery => {
+        //console.log(brewery.name)
+        const breweryBar = document.querySelector(".brewery_bar")
+        const breweryCard = document.createElement("div")
+        breweryBar.append(breweryCard)
+        const breweryName = document.createElement("h3")
+        const breweryAddress = document.createElement('p')
+        const street = brewery.street
+        breweryName.textContent = brewery.name
+        breweryCard.append(breweryName)
+        breweryAddress.textContent = brewery.street
+        breweryCard.appendChild(breweryAddress)
+
+    })
+}
+
+/* need to build a function that loops through the brewery obj,
+        for (let i = 0; i < breweries.length; i += 1)
+    uses const sendNamesToH2Divs = document.getElementById(`${[i]}`);
+    increments plus 1 for each item in in breweries.map,
+    each time is runs through: sendNamesToH2Divs.textContent = brewery.name
+            This is to append each name to each card on the slider
