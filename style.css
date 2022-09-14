@@ -23,7 +23,7 @@ body {
 .slide_container {
     max-width: 1120px;
     width: 100%;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .slide_content {
@@ -32,6 +32,7 @@ body {
 }
 
 .card {
+    
     border-radius: 25px;
     background-color: #FFF;
 }
