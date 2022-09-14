@@ -1,0 +1,104 @@
+{
+    "breweryLikes": [
+      {
+        "id": 0,
+        "name":,
+        "likes": 0
+      },
+      {
+        "id": 1,
+        "name":,
+        "likes": 1
+      },
+      {
+        "id": 2,
+        "name":,
+        "likes": 1
+      },
+      {
+        "id": 3,
+        "name":,
+        "likes": 2
+      },
+      {
+        "id": 4,
+        "name":,
+        "likes": 3
+      },
+      {
+        "id": 5,
+        "name":,
+        "likes": 5
+      },
+      {
+        "id": 6,
+        "name":,
+        "likes": 8
+      },
+      {
+        "id": 7,
+        "name":,
+        "likes": 13
+      },
+      {
+        "id": 8,
+        "name":,
+        "likes": 21
+      },
+      {
+        "id": 9,
+        "name":,
+        "likes": 34
+      },
+      {
+        "id": 10,
+        "name":,
+        "likes": 55
+      },
+      {
+        "id": 11,
+        "name":,
+        "likes": 89
+      },
+      {
+        "id": 12,
+        "name":,
+        "likes": 144
+      },
+      {
+        "id": 13,
+        "name":,
+        "likes": 233
+      },
+      {
+        "id": 14,
+        "name":,
+        "likes": 377
+      },
+      {
+        "id": 15,
+        "name":,
+        "likes": 610
+      },
+      {
+        "id": 16,
+        "name":,
+        "likes": 987
+      },
+      {
+        "id": 17,
+        "name":,
+        "likes": 1597
+      },
+      {
+        "id": 18,
+        "name":,
+        "likes": 2584
+      },
+      {
+        "id": 19,
+        "name":,
+        "likes": 4181
+      }
+    ]
+  }
