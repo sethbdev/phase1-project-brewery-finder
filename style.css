@@ -2,18 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 #header {
-    padding: 15px 0px 15px 50px;
+    padding: 15px 0px 15px 15px;
     text-align: left;
     background:#100d06;
-    color: #dad6ce;
-    font-size: 30px;
-    font-family: sans-serif;
+    color: orange;
+    font-size: 60px;
+    font-family: Impact, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    /* background-image: ; */
 }
 
+.page_title{
+    padding:15px 0px 15px 15px;
+    color:orange;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 #right_description {
     text-align: center;
     padding: 50px 40px ;
     width: 400px;
+    color: orange;
 
 }
 
@@ -126,3 +140,4 @@ body {
 .swiper_navBtn:hov {
     color: #C8963E
 }
+
