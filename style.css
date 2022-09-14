@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 #header {
+    margin-left: 1%;
     padding: 15px 0px 15px 15px;
     text-align: left;
     background:#100d06;
@@ -9,13 +10,16 @@
     font-size: 60px;
     font-family: Impact, Arial, Helvetica, sans-serif;
     font-style: italic;
-    /* background-image: ; */
+    
 }
 
 .page_title{
     padding:15px 0px 15px 15px;
     color:orange;
+    background-image: url(./pictures/phancy.png)"phancy";
+    margin-left: 1%; 
 }
+
 
 .image{
     display: block;
@@ -27,7 +31,8 @@
     text-align: center;
     padding: 50px 40px ;
     width: 400px;
-    color: orange;
+    color:orange;
+    
 
 }
 
@@ -36,8 +41,13 @@
     width: 400px;
 }
 
-#bar_id {
-    background-color: #dad6ce;
+#default_bar{
+    margin-left: 60%;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.701);
+    
 }
 
 *{
