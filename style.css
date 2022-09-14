@@ -121,7 +121,7 @@ body {
 
 .overlay::after {
     border-radius: 0 25px 0 0;
-    background-color: #FFF;
+    background-color: rgb(255, 255, 255);
 }
 
 .card_image{
@@ -142,9 +142,12 @@ body {
 }
 
 .name {
+    width: 200px;
     font-size: 18px;
     font-weight: 500;
     color: #342404;
+    text-align: center;
+    height: 37.5px;
 }
 
 .swiper_navBtn {
