@@ -22,6 +22,10 @@
     width: 400px;
 }
 
+#bar_id {
+    background-color: #dad6ce;
+}
+
 *{
     margin: 0;
     padding: 0;
