@@ -60,23 +60,37 @@ const swiper = new Swiper(".slide_content", {
           const imageTag = document.createElement("img")
           imageTag.className = "card_image"
           imageTag.src = "./pictures/bar 2.jpeg"
-  
           const cardContent = document.createElement("div")
           cardContent.className = "card_content"
-  
           const name = document.createElement("h2")
           name.className = "name"
           name.textContent = brewery.name
           cardContent.append(name)
-          
-          console.log(brewery.name)
-  
           cardImage.append(imageTag)
-  
           imageContent.append(overlay, cardImage)
           cardSwiperSlide.append(imageContent, cardContent)
           divInsert.append(cardSwiperSlide)
+
+          console.log(brewery.name)
   
+          imageTag.addEventListener("click", () => {
+            const barTitleName = document.querySelector("#bar_name")
+              barTitleName.textContent = brewery.name
+            const stateTitle = document.querySelector("#state_location")
+              stateTitle.textContent = brewery.state
+            const cityTitle = document.querySelector("#city_location")
+              cityTitle.textContent = brewery.city
+            const addressTitle = document.querySelector("#street")
+              addressTitle.textContent = brewery.street
+            const numberTitle = document.querySelector("#phone_number")
+              numberTitle.textContent = brewery.phone
+            const webUrl = document.querySelector(".bar_link")
+              webUrl.href = brewery.website_url
+              if (e.target["brewery.website_url"] === null) 
+                return 
+            
+          })
+          
       })
   
   }
@@ -132,24 +146,6 @@ async function joke() {
 /*
                         
 
-      function renderBreweries(breweries){
-    breweries.map(brewery => {
-        //console.log(brewery.name)
-        const breweryBar = document.querySelector(".brewery_bar")
-        const div = document.createElement("div")
-        div.className = "card swiper-slide"
-        breweryBar.append(breweryCard)
-        const breweryName = document.createElement("h3")
-        const breweryAddress = document.createElement('p')
-        const street = brewery.street
-        breweryName.textContent = brewery.name
-        breweryCard.append(breweryName)
-        breweryAddress.textContent = brewery.street
-        breweryCard.appendChild(breweryAddress)
-
-    })
-}
-*/
 
 /*function renderBreweryNames(breweries){
     breweries.map(brewery => {
