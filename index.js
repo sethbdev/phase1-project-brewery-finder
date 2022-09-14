@@ -79,8 +79,36 @@ const swiper = new Swiper(".slide_content", {
   
       })
   
-  
   }
+
+function hiddenButtonBuilder(){
+    const divSelect = document.querySelector("#bar_image")
+    const btn = document.createElement("button")
+    divSelect.appendChild(btn)
+
+    btn.addEventListener("click", () => {
+        joke();
+    })
+
+}
+hiddenButtonBuilder();
+
+async function joke() {
+    const response = await fetch("https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single");
+    const jokeReturn = await response.json();
+    const punchline = jokeReturn["joke"]
+    alert(punchline)
+  }
+
+
+
+/* async function joke() {
+    return fetch("https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single")
+        .then(r => r.json())
+        .then(data => alert(data))
+}
+*/
+
 
 /*function renderBreweries(breweries){
     breweries.map(brewery => {
