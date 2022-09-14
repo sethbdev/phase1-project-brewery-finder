@@ -102,6 +102,9 @@ async function joke() {
 
 
 
+
+
+
 /* async function joke() {
     return fetch("https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single")
         .then(r => r.json())
@@ -192,3 +195,7 @@ async function joke() {
                         </div>
 
                         */
+
+
+
+                        
