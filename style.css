@@ -12,9 +12,14 @@
 
 #right_description {
     text-align: center;
-    padding: 50px 40px;
-    width: 500px;
-    border: 200px #cd3d19;
+    padding: 50px 40px ;
+    width: 400px;
+
+}
+
+#left_description {
+    text-align: center;
+    width: 400px;
 }
 
 *{
@@ -36,13 +41,12 @@ body {
     max-width: 1000px;
     max-height: 100%;
     background-color: #1a1919;
-    padding: 30px;
     border-radius: 25px;
     border: 8px solid #342404b1
 }
 
 .slide_content {
-    padding: 45px 20px; 
+    padding: 25px 20px; 
     margin: 0 40px;
 }
 
@@ -83,7 +87,7 @@ body {
     bottom: -42px;
     height: 42px;
     width: 40px;
-    background-color: #342404d3;
+    background-color: #342404;
 }
 
 .overlay::after {
