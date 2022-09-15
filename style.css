@@ -16,6 +16,7 @@
 .page_title{
     padding:15px 0px 15px 15px;
     color:orange;
+    text-align: center;
     background-image: url(./pictures/phancy.png)"phancy";
     margin-left: 1%; 
 }
@@ -180,12 +181,12 @@ body {
     background-color: #C8963E;
 }
 
-#like_button {
+/* #like_button {
     cursor: auto;
     background-color: transparent;
     height: 18px;
     width: 60px;
     /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */
-    position: relative;
+    /* position: relative;
     left: 130px;
-}
+} */ 
