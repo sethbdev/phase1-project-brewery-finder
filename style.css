@@ -129,7 +129,8 @@ body {
     width: 150px;
     background: #FFF;
     border-radius: 50%;
-    padding: 1px
+    padding: 1px;
+    cursor: auto;
 }
 
 .card_image .card_image {
@@ -179,3 +180,12 @@ body {
     background-color: #C8963E;
 }
 
+#like_button {
+    cursor: auto;
+    background-color: transparent;
+    height: 18px;
+    width: 60px;
+    /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */
+    position: relative;
+    left: 130px;
+}

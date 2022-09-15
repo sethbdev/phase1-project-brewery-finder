@@ -45,10 +45,10 @@ const swiper = new Swiper(".slide_content", {
   });
 
   const divInsert = document.querySelector("#divInsert");
-
   function renderCarouselCards(breweries) {
-      console.log(breweries)
       breweries.forEach((brewery) => {
+          // brewery.likes = 0
+          // const btn = document.querySelector("#like_button")
           const cardSwiperSlide = document.createElement("div")
           cardSwiperSlide.className = "card swiper-slide"
           const imageContent = document.createElement("div")
@@ -70,10 +70,11 @@ const swiper = new Swiper(".slide_content", {
           imageContent.append(overlay, cardImage)
           cardSwiperSlide.append(imageContent, cardContent)
           divInsert.append(cardSwiperSlide)
+          
 
-          console.log(brewery.name)
-  
           imageTag.addEventListener("click", () => {
+            console.log(brewery.likes)
+            const container = document.querySelector("#link")
             const barTitleName = document.querySelector("#bar_name")
               barTitleName.textContent = brewery.name
             const stateTitle = document.querySelector("#state_location")
@@ -84,12 +85,24 @@ const swiper = new Swiper(".slide_content", {
               addressTitle.textContent = brewery.street
             const numberTitle = document.querySelector("#phone_number")
               numberTitle.textContent = brewery.phone
-            const webUrl = document.querySelector(".bar_link")
-              webUrl.href = brewery.website_url
-              if (e.target["brewery.website_url"] === null) 
-                return 
-            
-          })
+            // const webUrl = document.querySelector(".bar_link") 
+              // if (brewery.website_url != null) {  
+              // webUrl.href = brewery.website_url
+              // } else if (brewery.website_url === null){
+              //   webUrl.style.display = "none"
+              // }
+            while(container.firstChild) {
+                container.removeChild(container.lastChild)
+              }
+            if(brewery.website_url != null){
+                const testLink = document.createElement("a")
+              testLink.href = brewery.website_url
+              testLink.textContent = "link"
+              container.append(testLink)
+              console.log(container)
+              }
+
+          }) 
           
       })
   
@@ -114,10 +127,28 @@ async function joke() {
     alert(punchline)
   }
 
+  // function btn () {
+  //   const btn = document.querySelector("#like_button") 
+  //   btn.addEventListener("click", (e) => {
+  //     const newLikes = e.target["brewery_likes"].value
+  //     btn.textContent = parseInt(newLikes) + parseInt(btn.textContent) + " likes"   
+  //   })
+  // }
 
+// fetch("http://localhost:3000/breweryLikes")
+//   .then(r => r.json())
+//   .then(data => {
+//     likeBtn(data)})
 
-
-
+// function likeBtn(breweryLikes){
+//   let loveMe;
+//   btn.addEventListener("click", () => { 
+//     const btn = document.querySelector("#like_button")
+//     btn.textContent = breweryLikes.likes  
+//     loveMe.likes = loveMe.likes + 1;
+//     btn.textContent = loveMe.likes + " Love Me!"
+//   })
+// }
 
 /* async function joke() {
     return fetch("https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single")
@@ -145,28 +176,6 @@ async function joke() {
 }
 */
 
-
-/*
-                        
-
-
-/*function renderBreweryNames(breweries){
-    breweries.map(brewery => {
-        //console.log(brewery.name)
-        const breweryBar = document.querySelector(".brewery_bar")
-        const breweryCard = document.createElement("div")
-        breweryBar.append(breweryCard)
-        const breweryName = document.createElement("h3")
-        const breweryAddress = document.createElement('p')
-        const street = brewery.street
-        breweryName.textContent = brewery.name
-        breweryCard.append(breweryName)
-        breweryAddress.textContent = brewery.street
-        breweryCard.appendChild(breweryAddress)
-
-    })
-}
-*/
 /* need to build a function that loops through the brewery obj,
         for (let i = 0; i < breweries.length; i += 1)
     uses const sendNamesToH2Divs = document.getElementById(`${"[i]"}`);
