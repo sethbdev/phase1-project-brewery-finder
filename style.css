@@ -1,4 +1,3 @@
-/* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 #header {
@@ -13,10 +12,28 @@
     
 }
 
+#viewModeBtn {
+    text-align: right;
+    border: 0;
+    opacity: 100%;
+    color: #C8963E;
+}
+
+#viewMode {
+    background-color: transparent;
+    opacity: 100%;
+    color: #C8963E
+}
+
+#jokeBtn {
+    background-color: transparent;
+    opacity: 100%;
+    color: transparent
+}
+
 .page_title{
     padding:15px 0px 15px 15px;
     color:orange;
-    text-align: center;
     background-image: url(./pictures/phancy.png)"phancy";
     margin-left: 1%; 
 }
@@ -45,7 +62,7 @@
     margin-left: 60%;
 }
 
-.container{
+#phunkyContainer {
     background-color: rgba(0, 0, 0, 0.701);
     
 }
@@ -130,8 +147,7 @@ body {
     width: 150px;
     background: #FFF;
     border-radius: 50%;
-    padding: 1px;
-    cursor: auto;
+    padding: 1px
 }
 
 .card_image .card_image {
@@ -181,12 +197,3 @@ body {
     background-color: #C8963E;
 }
 
-/* #like_button {
-    cursor: auto;
-    background-color: transparent;
-    height: 18px;
-    width: 60px;
-    /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */
-    /* position: relative;
-    left: 130px;
-} */ 
