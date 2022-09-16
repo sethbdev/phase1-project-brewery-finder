@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 #header {
-    margin-left: 1%;
     padding: 15px 0px 15px 15px;
-    text-align: left;
+    text-align: center;
     background:#100d06;
     color: orange;
     font-size: 60px;
@@ -34,8 +33,7 @@
 .page_title{
     padding:15px 0px 15px 15px;
     color:orange;
-    background-image: url(./pictures/phancy.png)"phancy";
-    margin-left: 1%; 
+    text-align: center;
 }
 
 .image{
