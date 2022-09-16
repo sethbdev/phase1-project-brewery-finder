@@ -117,36 +117,50 @@ function fetchBreweries(){
       alert(punchline)
     }
   
-    function lightDarkButton(){
+    function lightButton(){
       const divSelectBtn = document.querySelector("#viewModeBtn")
       const btn = document.createElement("button")
-      btn.innerHTML = "View Mode";
+      btn.innerHTML = "Light Mode -";
       btn.type = "submit";
       btn.name = "formBtn";
-      btn.id = "viewMode"
+      btn.className = "viewMode"
       divSelectBtn.appendChild(btn)
       
       
       btn.addEventListener("click", renderLight)
   
   }
-  lightDarkButton();
+  lightButton();
+
+  function darkButton(){
+    const divSelectBtn = document.querySelector("#viewModeBtn")
+    const btn = document.createElement("button")
+    btn.innerHTML = "- Dark Mode";
+    btn.type = "submit";
+    btn.name = "formBtn";
+    btn.className = "viewMode"
+    divSelectBtn.appendChild(btn)
+    
+    
+    btn.addEventListener("click", renderDark)
+
+}
+darkButton();
+
+
   
   function renderLight() {
       const headerColor = document.getElementById("header")
       
-      if (headerColor.style.background = "#100d06") {
           headerColor.style.background = "#FFF"
-      } 
+  } 
       
+
+  function renderDark() {
+      const headerColor = document.getElementById("header")
+      headerColor.style.background = "#100d06"   
   }
-      /*function renderDark() {
-          const headerColor = document.getElementById("header")
-          if (headerColor.style.background != "#100d06") {
-              headerColor.style.background = "#100d06"
-          }
-      }
-      */
+     
       
   
       

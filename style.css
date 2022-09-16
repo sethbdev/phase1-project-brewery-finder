@@ -19,7 +19,7 @@
     color: #C8963E;
 }
 
-#viewMode {
+.viewMode {
     background-color: transparent;
     opacity: 100%;
     color: #C8963E
