@@ -158,13 +158,25 @@ darkButton();
   
   function renderLight() {
       const headerColor = document.getElementById("header")
-      headerColor.style.background = "#FFF"
+      headerColor.style.background = "rgb(212, 210, 210)"
+      const barColor = document.getElementById("phunkyContainer")
+      barColor.style.background = "rgb(212, 210, 210)"
+      // const slideColor = document.getElementsByClassName("slide_container")
+      // slideColor.style.background = "FFF"
+      // const bodyColor =
+      // bodyColor.style.background = 
   } 
       
 
   function renderDark() {
       const headerColor = document.getElementById("header")
-      headerColor.style.background = "#100d06"   
+      headerColor.style.background = "#100d06"
+      const barColor = document.getElementById("phunkyContainer")
+      barColor.style.background = "rgba(0, 0, 0, 0.701)"
+      // const sliderColor = document.getElementsByClassName("slide_container")
+      // sliderColor.style.background = "1a1919"
+      // const bodyColor =
+      // bodyColor.style.background = 
   }
      
       
