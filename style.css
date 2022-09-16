@@ -8,6 +8,7 @@
     font-size: 60px;
     font-family: Impact, Arial, Helvetica, sans-serif;
     font-style: italic;
+    letter-spacing: 2px;
     
 }
 
@@ -45,12 +46,12 @@
     margin-right: auto;
     width: 50%;
 }
+
 #right_description {
     text-align: center;
     padding: 50px 40px ;
     width: 400px;
-    color:orange;
-    
+    color:orange;   
 
 }
 
@@ -62,6 +63,7 @@
 #default_bar{
     margin-left: 60%;
 }
+
 
 #phunkyContainer {
     background-color: rgba(0, 0, 0, 0.701);
