@@ -26,8 +26,11 @@
 
 #jokeBtn {
     background-color: transparent;
-    opacity: 100%;
-    color: transparent
+    color: transparent;
+    border: transparent; 
+    cursor: help;
+    width: 200px;
+    height: 15px;
 }
 
 .page_title{
