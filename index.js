@@ -83,11 +83,18 @@ function fetchBreweries(){
               const addressTitle = document.querySelector("#street")
                 addressTitle.textContent = brewery.street
               const numberTitle = document.querySelector("#phone_number")
-                numberTitle.textContent = brewery.phone
-              const webUrl = document.querySelector(".bar_link")
-                webUrl.href = brewery.website_url
-                if (e.target["brewery.website_url"] === null) 
-                  return 
+                numberTitle.textContent = brewery.phone.slice(0,3) + "-" + brewery.phone.slice(3,6) + "-" + brewery.phone.slice(6,10)
+              
+              const container = document.querySelector("#link")
+              while(container.firstChild) {
+                container.removeChild(container.lastChild)
+              }
+              if(brewery.website_url != null){
+                const testLink = document.createElement("a")
+                  testLink.href = brewery.website_url
+                  testLink.textContent = "link"
+                  container.append(testLink)
+              }
               
             })
             
@@ -151,8 +158,7 @@ darkButton();
   
   function renderLight() {
       const headerColor = document.getElementById("header")
-      
-          headerColor.style.background = "#FFF"
+      headerColor.style.background = "#FFF"
   } 
       
 
