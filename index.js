@@ -124,6 +124,8 @@ function fetchBreweries(){
       alert(punchline)
     }
   
+    // Light Mode function
+
     function lightButton(){
       const divSelectBtn = document.querySelector("#viewModeBtn")
       const btn = document.createElement("button")
@@ -139,6 +141,8 @@ function fetchBreweries(){
   }
   lightButton();
 
+  //Dark Mode function
+  
   function darkButton(){
     const divSelectBtn = document.querySelector("#viewModeBtn")
     const btn = document.createElement("button")
@@ -159,6 +163,8 @@ darkButton();
   function renderLight() {
       const headerColor = document.getElementById("header")
       headerColor.style.background = "#FFF"
+     // const bodyColor = document.getElementById("body")
+      //bodyColor.style.backgroundColor = "#FFF"
   } 
       
 
