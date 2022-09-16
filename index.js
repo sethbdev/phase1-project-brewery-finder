@@ -165,10 +165,13 @@ darkButton();
       headerColor.style.background = "rgb(212, 210, 210)"
       const barColor = document.getElementById("phunkyContainer")
       barColor.style.background = "rgb(212, 210, 210)"
-      // const slideColor = document.getElementsByClassName("slide_container")
-      // slideColor.style.background = "FFF"
+      const slideColor = document.getElementsByClassName("slide_container")
+      const sliderColor = slideColor[0]
+      console.log(sliderColor)
+      console.log(slideColor[0])
+      sliderColor[0].style.background = "FFF"
       // const bodyColor =
-      // bodyColor.style.background = 
+       document.querySelector("body").style.background = "#FFF"
   } 
       
 
@@ -177,6 +180,7 @@ darkButton();
       headerColor.style.background = "#100d06"
       const barColor = document.getElementById("phunkyContainer")
       barColor.style.background = "rgba(0, 0, 0, 0.701)"
+      document.body.style.background = "#100d06"
       // const sliderColor = document.getElementsByClassName("slide_container")
       // sliderColor.style.background = "1a1919"
       // const bodyColor =
@@ -191,7 +195,7 @@ darkButton();
   
   
   
-  
+  // SCRAP CODE
   
   /* async function joke() {
       return fetch("https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single")
